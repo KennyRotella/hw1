@@ -3,7 +3,8 @@
 
 - Student ID ("Person Code"), name and surname of all team members
     10634706 Massimo Del Tufo
-
+    10716950 Praneeth Reddy Arikatla
+    
 - small description of the files inside the archive
     parameters.cfg             configuration file for dynamic parameter to select integration method
     hw1.launch                 launch file set paramiter for init pose and run nodes
