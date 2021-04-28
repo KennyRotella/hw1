@@ -1,5 +1,5 @@
-***IF IT IS BAD FORMATTED SET 4 CHAR TABS OR USE THE README.PNG***
-The file with instructions must be a .txt file and must contain (at least):
+
+<pre>The file with instructions must be a .txt file and must contain (at least):
 
 - Student ID ("Person Code"), name and surname of all team members
 	10634706 Massimo Del Tufo
@@ -38,4 +38,4 @@ The file with instructions must be a .txt file and must contain (at least):
 	rosrun hw1 gearratio_approx 												computes the mean of a sequence of values derived from bags' topic /scout_odom
 
 - info you think are important/interesting
-	for the computation of gear ratio and apparent baseline I've used the method suggested by prof. Cudrano, all values resulting from the computation (in a reasonable interval) were used to compute a mean value, so every value outside a given range were not considered, [1/40, 1/35] for gear ratio, [1.5, 2] for chi parameter. To visualize with 'rviz' use 'odom' as fixed frame.
+	for the computation of gear ratio and apparent baseline I've used the method suggested by prof. Cudrano, all values resulting from the computation (in a reasonable interval) were used to compute a mean value, so every value outside a given range were not considered, [1/40, 1/35] for gear ratio, [1.5, 2] for chi parameter. To visualize with 'rviz' use 'odom' as fixed frame.</pre>
