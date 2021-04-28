@@ -38,4 +38,5 @@
     rosrun hw1 gearratio_approx                                                 computes the mean of a sequence of values derived from bags' topic /scout_odom
 
 - info you think are important/interesting
-    for the computation of gear ratio and apparent baseline I've used the method suggested by prof. Cudrano, all values resulting from the computation (in a reasonable interval) were used to compute a mean value, so every value outside a given range were not considered, [1/40, 1/35] for gear ratio, [1.5, 2] for chi parameter. To visualize with 'rviz' use 'odom' as fixed frame.</pre>
+    for the computation of gear ratio and apparent baseline I've used the method suggested by prof. Cudrano, all values resulting from the computation (in a reasonable interval) were used to compute a mean value,
+    so every value outside a given range were not considered, [1/40, 1/35] for gear ratio, [1.5, 2] for chi parameter. To visualize with 'rviz' use 'odom' as fixed frame.</pre>
