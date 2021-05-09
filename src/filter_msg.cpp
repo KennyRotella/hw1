@@ -7,11 +7,11 @@
 #include <message_filters/sync_policies/approximate_time.h>
 #include <math.h>
 
-float radius = 0.1575;
-float real_bl = 0.583;
-float gear_ratio = 1/38.210690;
-float chi_param = 1.778309;
-float apparent_bl = real_bl * chi_param;
+float radius;
+float real_bl;
+float gear_ratio;
+float chi_param;
+float apparent_bl;
 ros::Publisher pub;
 
 void callback(const robotics_hw1::MotorSpeedConstPtr& fl,
@@ -39,6 +39,15 @@ int main(int argc, char** argv) {
   ros::init(argc, argv, "subscriber_sync");
 
   ros::NodeHandle n;
+
+  n.getParam("/radius", radius);
+  n.getParam("/real_bl", real_bl);
+  n.getParam("/gear_ratio", gear_ratio);
+  n.getParam("/chi_param", chi_param);
+
+  apparent_bl = real_bl * chi_param;
+  gear_ratio = 1 / gear_ratio;
+
   pub = n.advertise<geometry_msgs::TwistStamped>("/scout_speeds", 1);
 
   message_filters::Subscriber<robotics_hw1::MotorSpeed> sub1(n, "motor_speed_fl", 1);

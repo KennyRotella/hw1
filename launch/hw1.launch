@@ -1,5 +1,9 @@
 <launch>
 	<param name="initial_pose" value="0 0 0" />
+	<param name="radius" value="0.1575" />
+	<param name="real_bl" value="0.583" />
+	<param name="gear_ratio" value="38.210690" />
+	<param name="chi_param" value="1.778309" />
 	<node pkg="hw1" name="filter_msg" type="filter_msg"/>
 	<node pkg="hw1" name="odometry" type="odometry" output="screen"/>
 	<node pkg="hw1" name="odometry_tf" type="odometry_tf"/>
